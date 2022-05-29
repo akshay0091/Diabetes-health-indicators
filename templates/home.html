@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Diebetic prediction</title>
+    <link rel="stylesheet" href="../static/style/style1.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/style.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+
+<body>
+    
+        <div class="container-fluid  " id='main'>
+            <div class="bg-dark">
+                <nav class="navbar navbar-light bg-bg-dark ">
+                    <form class="form-inline">
+
+                        <a href="{{ url_for('home') }}" class="d-inline p-2 bg-primary text-white" >Home</a>
+                        <a href="{{ url_for('about') }}" class="btn btn-sm btn-outline-secondary" >About</a>
+                    </form>
+                </nav>
+
+            </div>
+            <div class="container-fluid      bg-dark text-dark ">
+                <div class="background">
+                    <form class="form" action="" method="post">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Username" name="Username">
+                            <input type="number" class="form-control" placeholder="Age" name="Age">
+                        </div>
+                        <div class="input-group mb-3">
+                            <input type="number" class="form-control" placeholder="Body Mass Index" name="BMI"
+                                >
+                        </div>
+                        <div class="input-group mb-3">
+                            <label class="input-group-text" id="space" for="inputGroupSelect01">Blood pressure
+                                level</label>
+                            <select name="HighBP" class="form-select" id="inputGroupSelect01" >
+                                <option selected>Choose...</option>
+                                <option value="0">high</option>
+                                <option value="1">low
+                                <option>
+                            </select>
+                            <label class="input-group-text" for="inputGroupSelect01">Cholesterol level</label>
+                            <select name="HighChol" class="form-select" id="inputGroupSelect01">
+                                <option selected>Choose...</option>
+                                <option value="0">high</option>
+                                <option value="1">low
+                                <option>
+                            </select>
+                        </div>
+
+                        <div class="input-group mb-3">
+                            <label class="input-group-text" for="inputGroupSelect01">Cholesterol check</label>
+                            <select name="CholCheck" class="form-select" id="inputGroupSelect01">
+                                <option selected>Choose...</option>
+                                <option value="0">No cholesterol check in 5 years</option>
+                                <option value="1">Cholesterol check in 5 years
+                                <option>
+                            </select>
+                            <label class="input-group-text" for="inputGroupSelect01">Smoker</label>
+                            <select name="Smoker" class="form-select" id="inputGroupSelect01">
+                                <option selected>Choose...</option>
+                                <option value="0">No</option>
+                                <option value="1">Yes
+                                <option>
+                            </select>
+                        </div>
+
+                        <div class="input-group mb-3">
+                            <label class="input-group-text" for="inputGroupSelect01">Stroke</label>
+                            <select name="Stroke" class="form-select" id="inputGroupSelect01">
+                                <option selected>Choose...</option>
+                                <option value="0">No</option>
+                                <option value="1">Yes
+                                <option>
+                            </select>
+                            <label class="input-group-text" for="inputGroupSelect01">Heart Diseaseor Attack</label>
+                            <select name="HeartDiseaseorAttack" class="form-select" id="inputGroupSelect01">
+                                <option selected>Choose...</option>
+                                <option value="0">No</option>
+                                <option value="1">Yes
+                                <option>
+                            </select>
+                        </div>
+
+                        <div class="input-group mb-3">
+                            <label class="input-group-text" for="inputGroupSelect01">Exercise</label>
+                            <select name="PhysActivity" class="form-select" id="inputGroupSelect01">
+                                <option selected>Choose...</option>
+                                <option value="0">No</option>
+                                <option value="1">Yes
+                                <option>
+                            </select>
+                        </div>
+                        <div class="input-group mb-3">
+                            <label class="input-group-text" for="inputGroupSelect01">Are you eating fruits per
+                                day</label>
+                            <select name="Fruits" class="form-select" id="inputGroupSelect01">
+                                <option selected>Choose...</option>
+                                <option value="0">No</option>
+                                <option value="1">Yes
+                                <option>
+                            </select>
+                        </div>
+                        <div class="input-group mb-3">
+                            <label class="input-group-text" for="inputGroupSelect01">Consume Vegetables more times per
+                                day
+                            </label>
+                            <select name="Veggies" class="form-select" id="inputGroupSelect01">
+                                <option selected>Choose...</option>
+                                <option value="0">No</option>
+                                <option value="1">Yes
+                                <option>
+                            </select>
+                        </div>
+                        <div class="input-group mb-3">
+                            <label class="input-group-text" for="inputGroupSelect01">Alcohol Consump 7 glass per week</label>
+                            <select name="HvyAlcoholConsump" class="form-select" id="inputGroupSelect01">
+                                <option selected>Choose...</option>
+                                <option value="0">No</option>
+                                <option value="1">Yes
+                                <option>
+                            </select>
+                        </div>
+                        <div class="input-group mb-3">
+                            <label class="input-group-text" for="inputGroupSelect01">Sex</label>
+                            <select name="Sex" class="form-select" id="inputGroupSelect01">
+                                <option selected>Choose...</option>
+                                <option value="0">Female</option>
+                                <option value="1">Male
+                                <option>
+                            </select>
+                        </div>
+                        <div class="col-12" id="submit">
+                            <button class="btn btn-primary" type="submit">Submit form</button>
+                        </div>
+
+                </div>
+
+
+    </form>
+
+    </div>
+
+
+
+    </div>
+
+    </div>
+    
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

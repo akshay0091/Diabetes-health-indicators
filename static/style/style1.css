@@ -1,0 +1,38 @@
+
+
+.background{
+    background-image: url("../image/img.jpg");
+    height: auto;
+    width: 100%;
+}
+.form{
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 0px;
+    padding-top: 30px;
+}
+.nav-bar{
+    padding: 0px;
+    margin-left: 200px;
+}
+#main{
+    padding: 0px;
+}
+.input-group-text{
+    padding: 20px;
+}
+#submit{
+    padding-left: 47%;
+}
+#space{
+    padding-left: 20px;
+}
+.paragraph{
+    margin: 100px;
+    text-align: center;
+    font-weight: 700;
+}
+.heading{
+    text-align: center;
+    font-display: initial;
+}
